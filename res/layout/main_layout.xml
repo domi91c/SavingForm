@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:gravity="top">
+
+    <HorizontalScrollView
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="1.7" >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight=".5"
+                android:id="@+id/drinkSelectContainer">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight=".5">
+        <fragment
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:id="@+id/formContainer"
+                tools:layout="@layout/main_layout"
+                class="com.example.SavingForm.FormFragment">
+
+        </fragment>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="1.6">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="5">
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="GET FUCKED"
+                    android:id="@+id/bCalc"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="8">
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Next Drink"
+                    android:id="@+id/bNextDrink"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="8">
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Save Drink"
+                    android:id="@+id/bSaveForm"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+<!--<Button-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Next..."-->
+<!--android:id="@+id/bCalc"/>-->
